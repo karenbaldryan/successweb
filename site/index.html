@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Success — daily quotes and stories of remarkable people. Get motivated, every single day.">
+    <meta name="theme-color" content="#000000">
+    <title>Success — Daily Quotes & Stories of Successful People</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">
+            <img class="brand-mark" src="/favicon.svg" alt="" width="32" height="32">
+            <span class="brand-name">Success</span>
+        </a>
+        <nav class="site-nav">
+            <a href="/privacy.html">Privacy</a>
+            <a href="/terms.html">Terms</a>
+            <a class="cta" href="/get">Get the App</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <p class="eyebrow">iOS App</p>
+                <h1>Get motivated. Every day.</h1>
+                <p class="lead">
+                    Success delivers handpicked quotes and the real stories of remarkable people —
+                    so you can start each day a little stronger than the last.
+                </p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="/get">Download on the App Store</a>
+                    <a class="btn btn-ghost" href="#features">Learn more</a>
+                </div>
+                <p class="micro">No accounts. No ads. No tracking.</p>
+            </div>
+            <div class="hero-card" aria-hidden="true">
+                <blockquote>
+                    "The man who moves a mountain begins by carrying away small stones."
+                </blockquote>
+                <cite>— Confucius</cite>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="feature">
+                <h3>Daily Quotes</h3>
+                <p>A curated quote each morning to set the tone for your day.</p>
+            </div>
+            <div class="feature">
+                <h3>Success Stories</h3>
+                <p>Bite-sized, well-researched stories of people who built something remarkable.</p>
+            </div>
+            <div class="feature">
+                <h3>Beautifully Shareable</h3>
+                <p>Save and share quotes as elegant images with friends.</p>
+            </div>
+            <div class="feature">
+                <h3>Private by Design</h3>
+                <p>We do not collect personal data and we never show ads.</p>
+            </div>
+        </section>
+
+        <section class="closing">
+            <h2>Carry the spark with you.</h2>
+            <p>Available on iPhone and iPad.</p>
+            <a class="btn btn-primary" href="/get">Get Success</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span>&copy; <span id="year"></span> Success</span>
+            <nav>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Use</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
