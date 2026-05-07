@@ -2,13 +2,13 @@
 
 Static marketing site for the **Success** iOS app, served at [scss.app](https://scss.app).
 
-The container ships only the site + a tiny [Caddy](https://caddyserver.com/) instance to handle the `/get` redirect and a health check. Your existing nginx on the host terminates TLS and reverse-proxies to it.
+The container ships the site behind a small nginx that handles the `/get` redirect, friendly URL aliases, and a health check. Your existing nginx on the host terminates TLS and reverse-proxies to it.
 
 ## What's here
 
 - `site/` — static site (`index.html`, `privacy.html`, `terms.html`, CSS, favicon, sitemap)
-- `Caddyfile` — redirect + headers + health check
-- `Dockerfile` — `caddy:2-alpine` serving `site/`
+- `nginx.conf` — redirects + headers + health check
+- `Dockerfile` — `nginx:1.27-alpine` serving `site/`
 - `docker-compose.yml` — drop-in compose file for the server
 - `.github/workflows/build-and-push.yml` — builds multi-arch image and pushes to GHCR
 
